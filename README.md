@@ -1,4 +1,6 @@
 deck
 ====
 
-Deck for playing cards
+Deck for playing cards in ruby.
+
+Less is More.
