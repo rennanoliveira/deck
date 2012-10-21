@@ -44,18 +44,11 @@ describe Deck do
 
   describe "#shuffle" do
     it "should shuffle the array of cards" do
-      cartas = [1,2,3,4]
-      cartas.should_receive :shuffle
-      deck = Deck.new(cartas)
+      cards = [1,2,3,4]
+      cards.should_receive :shuffle
+      deck = Deck.new(cards)
       deck.shuffle
     end
   end
-  #describe "#give_hands" do
-  #  it "should return an array of hands given a certain quantity of cards"
-  #  it "should raise error if there are not enough cards"
-  #end
 
-  #describe "#shuffle" do
-  #  it "should shuffle the cards"
-  #end
 end
