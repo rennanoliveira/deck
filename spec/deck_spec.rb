@@ -44,10 +44,11 @@ describe Deck do
 
   describe "#shuffle" do
     it "should shuffle the array of cards" do
-      cards = [1,2,3,4]
+      cards = (0..30).to_a
       deck = Deck.new(cards.dup)
       deck.shuffle
       deck.cards.should_not == cards
+      deck.cards.should =~ cards
     end
   end
 
