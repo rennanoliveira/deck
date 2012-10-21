@@ -15,11 +15,8 @@ class Deck
   end
 
   def draw(amount=1)
-    if amount > @cards.size
-      raise NotEnoughCardsException
-    else
-      @cards.shift(amount)
-    end
+    raise NotEnoughCardsException if amount > @cards.size
+    @cards.shift(amount)
   end
 
   def shuffle
