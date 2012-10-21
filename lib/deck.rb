@@ -1,6 +1,5 @@
 require 'exceptions'
 class Deck
-  attr_writer :cards
 
   def initialize(array_of_cards)
     if array_of_cards.is_a? Array
