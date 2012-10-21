@@ -45,9 +45,9 @@ describe Deck do
   describe "#shuffle" do
     it "should shuffle the array of cards" do
       cards = [1,2,3,4]
-      cards.should_receive :shuffle
-      deck = Deck.new(cards)
+      deck = Deck.new(cards.dup)
       deck.shuffle
+      deck.cards.should_not == cards
     end
   end
 

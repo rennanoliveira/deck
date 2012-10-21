@@ -1,6 +1,6 @@
 require 'exceptions'
 class Deck
-  attr_writer :cards
+  attr_reader :cards
 
   def initialize(array_of_cards)
     if array_of_cards.is_a? Array
@@ -20,7 +20,7 @@ class Deck
   end
 
   def shuffle
-    @cards.shuffle
+    @cards.shuffle!
   end
 
 end
