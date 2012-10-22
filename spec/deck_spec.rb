@@ -13,7 +13,7 @@ describe Deck do
       deck = Deck.new([1])
       deck.empty?.should be_false
     end
-    it "should return false if there are no cards in the deck" do
+    it "should return true if there are no cards in the deck" do
       deck = Deck.new([])
       deck.empty?.should be_true
     end
